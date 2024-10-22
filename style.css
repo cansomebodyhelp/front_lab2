@@ -1,0 +1,112 @@
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    height: 100px;
+}
+
+tr:first-child td {
+    height: 60px;
+}
+
+tr:nth-child(2) td {
+    height: 60px;
+}
+
+td:first-child {
+    width: 100px;
+}
+
+tr:nth-child(1) {
+    background-color: #018f8f;
+    color: white;
+}
+
+tr:nth-child(2) {
+    background-color: #f5f501;
+}
+
+tr:nth-child(1):hover {
+    background-color: #f5f501;
+    color: black;
+}
+
+tr:nth-child(2):hover {
+    background-color: #018f8f;
+    color: white;
+}
+
+td:nth-child(2) {
+    width: 100px;
+}
+
+td:nth-child(3), td:nth-child(4) {
+    width: 250px;
+}
+td:nth-child(3), td:nth-child(5) {
+    width: 250px;
+}
+
+/* Первая группа квадратов */
+.grey {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+    background-color: #b8cce4;
+    left: 70px;
+    top: 540px;
+    transform: rotate(45deg);
+}
+
+.yellow {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+    background-color: yellow;
+    left: 15px;
+    top: 620px;
+    transform: rotate(22.5deg);
+}
+
+.red {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+    background-color: #cc0066;
+    left: 125px;
+    top: 620px;
+    transform: rotate(-22.5deg);
+}
+
+/* Вторая группа квадратов */
+.grey-2, .yellow-2, .red-2 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+}
+
+/* Позиционирование второй группы квадратов с использованием transform */
+.grey-2 {
+    background-color: #b8cce4;
+    transform: translate(500px, 220px) rotate(45deg);
+    
+}
+
+.yellow-2 {
+    background-color: yellow;
+    
+    transform: translate(445px,300px) rotate(22.5deg);
+}
+
+.red-2 {
+    background-color: #cc0066;
+    /* смещение по вертикали */
+    transform: translate(555px, 300px) rotate(-22.5deg);
+}
