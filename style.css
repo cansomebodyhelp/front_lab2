@@ -50,7 +50,7 @@ td:nth-child(3), td:nth-child(5) {
     width: 250px;
 }
 
-/* Первая группа квадратов */
+
 .grey {
     position: absolute;
     width: 80px;
@@ -84,7 +84,7 @@ td:nth-child(3), td:nth-child(5) {
     transform: rotate(-22.5deg);
 }
 
-/* Вторая группа квадратов */
+
 .grey-2, .yellow-2, .red-2 {
     position: absolute;
     width: 80px;
@@ -92,7 +92,7 @@ td:nth-child(3), td:nth-child(5) {
     border-radius: 10%;
 }
 
-/* Позиционирование второй группы квадратов с использованием transform */
+
 .grey-2 {
     background-color: #b8cce4;
     transform: translate(500px, 220px) rotate(45deg);
@@ -107,6 +107,6 @@ td:nth-child(3), td:nth-child(5) {
 
 .red-2 {
     background-color: #cc0066;
-    /* смещение по вертикали */
+   
     transform: translate(555px, 300px) rotate(-22.5deg);
 }
